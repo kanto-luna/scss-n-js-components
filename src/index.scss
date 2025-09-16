@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@use './variables.scss' as *;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+  box-sizing: border-box;
+}

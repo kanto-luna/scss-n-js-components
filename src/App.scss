@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@use './variables.scss' as *;
+
+h1 {
+  margin: 10px 20px;
+}
+
+h2 {
+  margin: 10px 20px;
+}
+
+hr {
+  width: 95%;
+}
+
+img {
+  object-fit: cover;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: $blue;
+}
+
+.detail {
+  font-size: 14px;
+  color: $blue;
+}
