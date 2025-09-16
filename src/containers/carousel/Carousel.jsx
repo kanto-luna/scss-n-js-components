@@ -14,13 +14,17 @@ export default function Carousel() {
         clearTimeout(resizeTimer)
       }
       resizeTimer = setTimeout(() => {
+        document.querySelectorAll('.section-02 .carousel-controller-item').forEach(item => {
+          item.classList.remove('active')
+        })
+        document.querySelectorAll('.section-02 .carousel-controller-item')[0].classList.add('active')
         carouselItems.style.transform = `translateX(0)`
         resizeTimer = null
       }, 500)
     })
-    document.querySelectorAll('.carousel-controller-item').forEach((item, index) => {
+    document.querySelectorAll('.section-02 .carousel-controller-item').forEach((item, index) => {
       item.addEventListener('click', () => {
-        document.querySelectorAll('.carousel-controller-item').forEach(item => {
+        document.querySelectorAll('.section-02 .carousel-controller-item').forEach(item => {
           item.classList.remove('active')
         })
         item.classList.add('active')
