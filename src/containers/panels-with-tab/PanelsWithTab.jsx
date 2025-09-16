@@ -1,6 +1,6 @@
 import { onMount } from 'solid-js'
 
-import selfPortraitInAStrawHat from '../assets/self-portrait-in-a-straw-hat.jpg'
+import selfPortraitInAStrawHat from '/assets/self-portrait-in-a-straw-hat.jpg'
 import './PanelsWithTab.scss'
 
 export default function PanelsWithTab() {

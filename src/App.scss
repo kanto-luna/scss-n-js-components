@@ -2,6 +2,10 @@
 
 @use './variables.scss' as *;
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 h1 {
   margin: 10px 20px;
 }
@@ -16,6 +20,10 @@ hr {
 
 img {
   object-fit: cover;
+}
+
+section {
+  margin-bottom: 20px;
 }
 
 .title {
